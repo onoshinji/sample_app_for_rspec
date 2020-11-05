@@ -13,7 +13,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'sorcery'
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'binding_of_caller'
+  gem 'pry-byebug'
+  gem "capybara"
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :development do
+  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+
 end
 
 group :development do
