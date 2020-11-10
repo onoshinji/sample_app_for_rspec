@@ -20,11 +20,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-end
-
-group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-
+  gem 'webdrivers'
 end
 
 group :development do
